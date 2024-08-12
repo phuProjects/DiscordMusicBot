@@ -1,0 +1,8 @@
+@commands.command()
+    async def embed(self, ctx):
+        embeded_msg =  discord.Embed(title='Title of Embed',description='Description of Embede',color=discord.Color.green())
+        embeded_msg.set_thumbnail(url=ctx.author.avatar)
+        embeded_msg.add_field(name='name of field', value='value of field', inline=False)
+        embeded_msg.set_image(url=ctx.guild.icon)
+        embeded_msg.set_footer(text='footer text',icon_url=ctx.author.avatar)
+        await ctx.send(embed=embeded_msg)
