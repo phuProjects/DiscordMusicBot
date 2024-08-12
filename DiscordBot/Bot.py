@@ -9,7 +9,7 @@ bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
 @bot.event
 async def on_ready():
-    print("Ready for use.")
+    print("Ready for use!")
     print("--------------")
 
 load_dotenv()
