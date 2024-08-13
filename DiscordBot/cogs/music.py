@@ -2,11 +2,9 @@ import discord
 from discord.ext import commands
 import yt_dlp
 
-
 intents= discord.Intents.default()
 intents.message_content = True
 intents.voice_states = True
-
 
 FFMPEG_OPTIONS = {'options': '-vn'}
 YDL_OPTIONS = {'format' : 'bestaudio', 'noplaylist' : True}
@@ -20,7 +18,6 @@ class Music(commands.Cog, name="Music"):
     async def on_ready(self):
         print("Music channel ready")
 
-#Commands
     @commands.command()
     async def play(self, ctx, * ,search):
         voice_channel = ctx.author.voice.channel if ctx.author.voice else None
@@ -77,7 +74,6 @@ class Music(commands.Cog, name="Music"):
         try:
             if not self.queue:
                 await ctx.send("Queue is currently empty.")
-
             else:
                 queue_list = ""
                 start = 0
@@ -113,8 +109,18 @@ class Music(commands.Cog, name="Music"):
             else:
                 await ctx.send("Music is already playing.")
         except Exception as e:
-            print(f"Error {e}")
+            await ctx.send(f"Error {e}")
 
+    @commands.command()
+    async def disconnect(self, ctx):
+        try:
+            if not ctx.voice_client:
+                await ctx.send("Currently not in a voice channel.")
+            else:
+                await ctx.voice_client.disconnect()
+                await ctx.send(f"Disconnected from the {ctx.author.voice.channel}.")
+        except Exception as e:
+            await ctx.send(f"Error {e}")
 
 async def setup(bot):
     await bot.add_cog(Music(bot))

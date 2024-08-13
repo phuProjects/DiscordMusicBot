@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
-
 @bot.event
 async def on_ready():
     print("Ready for use!")
@@ -26,4 +25,3 @@ async def main():
         await bot.start(TOKEN)
 
 asyncio.run(main())
-
