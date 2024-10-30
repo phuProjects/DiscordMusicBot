@@ -17,8 +17,9 @@ Handles multiple user requests asynchronously without blocking the bot.
 * !pause - Pauses the current song.
 * !resume - Resumes the paused song.
 * !skip - Skips the current song and plays the next in the queue.
-* !stop - Stops playback and clears the queue.
-
+* !list_queue - list all of the songs in the queue
+* !clear - clear all songs in the list
+* !disconnect
 ## Requirements 📋
 * Python 3.8+
 * discord.py
