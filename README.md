@@ -15,17 +15,5 @@ Concurrency and Smooth Playback
 Ensures smooth audio playback using Python’s asyncio library.
 Handles multiple user requests asynchronously without blocking the bot.
 
-# Discord Music Bot 🎶
-(Brief introduction about the project.)
-
-## Features ✨
-- Music Queue Management
-  Add songs to a queue for continuous playback.
-Supports pause, resume, skip, and stop commands.
-- YouTube Integration
-  Users can search and queue songs by simply providing song names or links.
-- Concurrency and Smooth Playback
-Ensures smooth audio playback using Python’s asyncio library.
-Handles multiple user requests asynchronously without blocking the bot.
 ## Installation ⚙️
 
