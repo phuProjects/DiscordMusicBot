@@ -12,5 +12,10 @@ Users can search and queue songs by simply providing song names or links.
 Ensures smooth audio playback using Python’s asyncio library.
 Handles multiple user requests asynchronously without blocking the bot.
 
-## Installation ⚙️
+## Usage 🛠️
+!play <song_name_or_url> - Adds a song to the queue and starts playback.
+!pause - Pauses the current song.
+!resume - Resumes the paused song.
+!skip - Skips the current song and plays the next in the queue.
+!stop - Stops playback and clears the queue.
 
