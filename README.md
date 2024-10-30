@@ -1,4 +1,4 @@
-##Discord Music Bot 🎶
+## Discord Music Bot 🎶
 A feature-rich Discord bot built with Python to manage music playback, designed to enhance the user experience on Discord servers. This bot supports music queue management, playback controls, and integrates YouTube as a music source.
 
 #Features ✨
