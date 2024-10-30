@@ -19,3 +19,11 @@ Handles multiple user requests asynchronously without blocking the bot.
 * !skip - Skips the current song and plays the next in the queue.
 * !stop - Stops playback and clears the queue.
 
+## Requirements 📋
+* Python 3.8+
+* discord.py
+* yt-dlp
+* Install all dependencies using "pip install -r requirements.txt"
+
+## License 📜
+This project is licensed under the MIT License.
